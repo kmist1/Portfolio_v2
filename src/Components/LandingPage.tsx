@@ -59,7 +59,7 @@ export default function  LandingPage() {
                     <div>
                         <div className = {classes.section1}></div>
                         <div className={classes.section2} style={{backgroundColor:'rgba(0,0,0, 0.4)'}}>
-                            <h1 style={{fontSize: '80px'}}> Krunal Mistry</h1>
+                            <h1 style={{fontSize: '75px'}}> Krunal Mistry</h1>
                         </div>
                     </div>
                     <Typography>
