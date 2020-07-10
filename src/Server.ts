@@ -10,7 +10,7 @@ const bodyParser = require('body-parser');
 AWS.config.region = process.env.REGION
 
 app.set('view engine', 'pug')
-app.set('build', __dirname + '/index.html')
+app.use(Express.static(__dirname + '/build'));
 app.use(bodyParser.urlencoded({extended:false}))
 
 app.get('/', function (req, res) {

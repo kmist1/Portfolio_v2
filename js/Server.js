@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 // Set region for AWS SDKs
 aws_sdk_1.default.config.region = process.env.REGION;
 app.set('view engine', 'pug');
-app.set('build', __dirname + '/index.html');
+app.use(express_1.default.static(__dirname + '/build'));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/', function (req, res) {
     res.render('index', {
